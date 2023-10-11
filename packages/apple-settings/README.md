@@ -28,7 +28,7 @@ const {
   Group,
 } = require("@config-plugins/apple-settings");
 
-module.exports = (config) => {
+module.exports = ({config}) => {
   return withAppleSettings(config, {
     // The name of the .plist file to generate. Root is the default and must be provided.
     Root: {
